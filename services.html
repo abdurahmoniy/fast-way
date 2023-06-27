@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FastWay Trans</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <style>
       @media (max-width: 640px) {
@@ -23,9 +23,30 @@
         .logo {
           width: 150px;
         }
+        .main {
+          display: block;
+        }
+        .services_main {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          border-radius: 0;
+        }
+        .main {
+          min-height: 120vh;
+        }
+        .mainqw{
+          height: 100vh;
+          display: flex;
+          align-items: center;
+        }
       }
       .services {
         overflow: hidden;
+      }
+      .num:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
       }
     </style>
   </head>
@@ -36,7 +57,7 @@
       <a class="logo" href="#">
         <img src="../assets/logo.png" alt="" class="w-[250px]" />
       </a>
-      <div class="nav text-red-700 font-bold flex hide-on-mobile">
+      <div class="nav font-bold flex hide-on-mobile">
         <a href="index.html" class="mx-2 hover:scale-110 duration-300"
           >Bosh Saxifa</a
         >
@@ -46,43 +67,49 @@
       </div>
     </div>
     <div class="services">
-      <div class="main md:px-60 px-12 flex items-center w-[100%]">
-        <div class="block w-[60%]">
-          <div class="textred font-bold text-[100px] animtext">
-            FastWay <br> Trans
-          </div>
-          
-          <div class="my-4">
-            <div class="font-semibold animtext1">
-              O'zbekiston ichida hamda Xalqaro yuklar <br> bilan ishlash xizmati
+      <div class="main flex items-center">
+        <div class="block md:px-60 px-12 mainqw">
+          <div class="">
+            <div class="textred font-bold text-[100px] animtext">
+              FastWay <br />
+              Trans
             </div>
-            <div class="flex animtext2 my-4">
-              <a href="index.html" class="hover:bg-transparent bg-red-500 duration-300 border rounded border-red-700 text-white py-2 px-4 mx-1">Bosh Saxifa</a>
+  
+            <div class="my-4">
+              <div class="font-semibold animtext1">
+                O'zbekiston ichida hamda Xalqaro yuklar <br />
+                bilan ishlash xizmati
+              </div>
+              <div class="flex animtext2 my-4">
+                <a
+                  href="index.html"
+                  class="hover:bg-transparent bg-red-500 duration-300 border rounded border-red-700 text-white py-2 px-4 mx-1"
+                  >Bosh Saxifa</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <div class="services_main w-[40%] flex justify-center">
+        <div class="services_main flex justify-center">
           <div class="">
             <div class="flex justify-center text-[50px]">Bog'lanish</div>
             <div class="block numdiv">
-              <a class="hover:scale-105" href="tel:+998999910300">
-                <div class="num" >+998999910300</div>
+              <a class="" href="tel:+998999910300">
+                <div class="num">+998999910300</div>
               </a>
-              <a class="hover:scale-105" href="tel:+998901116885">
-                <div class="num" >+998901116885</div>
+              <a class="" href="tel:+998901116885">
+                <div class="num">+998901116885</div>
               </a>
-              <a class="hover:scale-105" href="tel:+998946481306">
-                <div class="num" >+998946481306</div>
+              <a class="" href="tel:+998946481306">
+                <div class="num">+998946481306</div>
               </a>
             </div>
-            <div class="flex justify-center text-[35px]">Ish vaqti 08:00 - 20:00 tushlik vaqtisiz.</div>
+            <div class="flex justify-center text-[35px] my_vaqt">
+              Ish vaqti 08:00 - 20:00 tushlik vaqtisiz.
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bottom-content">
-        
       </div>
     </div>
   </body>
 </html>
-
