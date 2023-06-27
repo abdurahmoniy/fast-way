@@ -9,6 +9,17 @@ body {
   min-height: 100vh;
   background-size: cover;
 }
+.services {
+  background: url(../assets/truckbg3.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.textred{
+  color: rgba(254, 240, 138, 0.927);
+}
 
 .header {
   background: rgba(254, 240, 138, 0.927);
@@ -17,8 +28,9 @@ body {
   z-index: 1;
 }
 
-.main, .services {
-    height: 100vh;
+.main,
+.services {
+  min-height: 100vh;
 }
 
 .animtext {
@@ -30,29 +42,52 @@ body {
   animation-fill-mode: both;
 }
 .animtext1 {
-    animation-delay: .3s;
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    color: white;
-    font-size: 40px;
-  }
-  .animtext2 {
-    animation-delay: .5s;
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  .active {
-    color: #000;
-    transform: scale(1.1);
-  }
+  animation-delay: 0.3s;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  color: white;
+  font-size: 40px;
+}
+.animtext2 {
+  animation-delay: 0.5s;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.active {
+  color: #000;
+  transform: scale(1.1);
+}
+.services_main {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(254, 240, 138, 0.732);
+  border-radius: 20px;
+}
+
+.num{
+  border: 1px solid transparent;
+  background: rgba(254, 240, 138, 0.666);
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bottom-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @-webkit-keyframes fadeInUp {
   0% {
